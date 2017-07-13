@@ -1,0 +1,101 @@
+case_group <- c("040274", "070913","079741","079779","083505","088101",
+                "091518","116019")
+ctrl_group <- c("067754","070103","070785","070880","074301","074607",
+                "074720","074848","075199")
+
+for (i in ctrl_group){
+  rdname <- paste("Data_",i,"T_C",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_C_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in ctrl_group){
+  rdname <- paste("Data_",i,"N_C",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_C_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in ctrl_group){
+  rdname <- paste("Data_indel_",i,"T_C",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_C_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in ctrl_group){
+  rdname <- paste("Data_indel_",i,"N_C",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_C_anno_indel.csv",sep = ""))[,-1])
+}
+
+
+for (i in case_group){
+  rdname <- paste("Data_",i,"T_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_P_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_",i,"N_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_P_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_",i,"T_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_R_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_",i,"N_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_R_anno_snp.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"T_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_P_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"N_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_P_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"T_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_R_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"N_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_R_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"T_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_P_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"N_P",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_P_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"T_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"T_R_anno_indel.csv",sep = ""))[,-1])
+}
+
+for (i in case_group){
+  rdname <- paste("Data_indel_",i,"N_R",sep = "")
+  assign(rdname,
+         read.csv(paste(i,"N_R_anno_indel.csv",sep = ""))[,-1])
+}
